@@ -53,7 +53,7 @@ GET  /courses/{id}
 ```
 Adding/Removing "Content" (Video etc) to Courses.
 ```
-POST   /courses/{course_id}/content
+POST /courses/{course_id}/content
 ```
 
 ### Manage audience
