@@ -16,15 +16,14 @@ Feel free to change/improve the modeling and naming _at your will_. Again, it's 
 4. The admin can manage `Courses`
 5. A Course may contain attributes such as `title`, `description`, `thumbnail` etc
 6. The Course thumbnail can be saved at the local filesystem (server) or some Cloud provider, such as AWS S3. It's up to you.
-7. A Course may have `Chapters`
-8. A Chapter may contain a `Content`, which can be a `Video`, `Quiz` etc. It's ok if the Chapter has only one type of content, i.e `Video`
-9. A `Video` can be uploaded to the local filesystem (server) or some Cloud provider, you're free to choose one or both
-10. A Course may have an `Audience`, which will be the Users allowed to see the Course
-11. A User may see and take Courses
+7. A Course may contain a `Content`, which can be a `Video`, `Quiz` etc. It's ok if the Course has only one type of content, i.e `Video`
+8. A `Video` can be uploaded to the local filesystem (server) or some Cloud provider, you're free to choose one or both
+9. A Course may have an `Audience`, which will be the Users allowed to see the Course
+10. A User may see and take Courses
 
 Here's a sample diagram:
 
-<img width="100%" alt="Screenshot 2022-01-21 at 13 48 15" src="https://user-images.githubusercontent.com/385640/150537856-c1a3498a-c881-4651-a097-b735eb56b60c.png">
+<img width="640" alt="Screenshot 2022-01-21 at 15 25 02" src="https://user-images.githubusercontent.com/385640/150553230-951456e8-c9f8-4ee0-82c5-fc57881a9ab1.png">
 
 ## The REST API
 The expectation is basically running a simple REST API alongside with some scenarios. Following some tips for starting point.
@@ -52,15 +51,9 @@ POST /courses
 GET  /courses
 GET  /courses/{id}
 ```
-Adding/Removing Chapters on Courses.
+Adding/Removing "Content" (Video etc) to Courses.
 ```
-POST   /courses/{course_id}/chapters
-GET    /courses/{course_id}/chapters
-DELETE /courses/{course_id}/chapters/{id}
-```
-Adding/Removing "Content" (Video etc) to Chapters.
-```
-POST   /courses/{course_id}/chapters/{chapter_id}/content
+POST   /courses/{course_id}/content
 ```
 
 ### Manage audience
