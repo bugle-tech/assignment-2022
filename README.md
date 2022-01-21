@@ -2,7 +2,7 @@
 The assignment test used for interviews on early 2022
 
 # Idea
-The idea is to create a very simple [LMS (Learning Management System)](https://en.wikipedia.org/wiki/Learning_management_system), which basically covers the implementation of REST API endpoints for managing courses and trainees.
+The idea is to create a very simple [LMS (Learning Management System)](https://en.wikipedia.org/wiki/Learning_management_system), which basically covers the implementation of REST API endpoints for managing courses and users.
 
 ## Specifications
 Following we will provide some model specifications which can be just a **starting point** in order to model the REST API endpoints. The specifications might not be followed strictly, so we will evaluate creativity and problem-solving capabilities towards the main goal, which is a REST API for managing courses and trainees. 
@@ -18,7 +18,7 @@ Feel free to change/improve the modeling and naming _at your will_. Again, it's 
 6. The Course thumbnail can be saved at the local filesystem (server) or some Cloud provider, such as AWS S3. It's up to you.
 7. A Course may have `Chapters`
 8. A Chapter may contain a `Content`, which can be a `Video`, `Quiz` etc. It's ok if the Chapter has only one type of content, i.e `Video`
-9. A `Video` can be uploaded to the loca filesystem (server) or some Cloud provider, you're free to choose one or both
+9. A `Video` can be uploaded to the local filesystem (server) or some Cloud provider, you're free to choose one or both
 10. A Course may have an `Audience`, which will be the Users allowed to see the Course
 11. A User may see and take Courses
 
