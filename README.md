@@ -78,6 +78,6 @@ GET /my-courses/{course_id}/take
 * We don't expect a strict deadline, but we estimate that a week should be reasonable to implement the assignment
 * We don't expect the assignment to follow all the requirements. We evaluate code quality, creativity, problem-solving capabilities
 * We expect the application to be shared with us somehow, through platforms such as Github, Gitlab etc
-* Bonus points: deploy, CI, integration with cloud services
+* Bonus points: deploy, CI, tests, integration with cloud services
 * Bonut points plus plus: UI, a.k.a some frontend consuming the API
 * Feel free to drop any questions at any time regarding the requuirements and during the assingment
